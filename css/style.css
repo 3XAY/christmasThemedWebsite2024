@@ -17,6 +17,7 @@ Header Styles
     background-image: url(../imgs/bgImage.png);
     background-position: center;
     background-size: cover;
+    background-repeat: repeat;
 }
 
 /*
@@ -56,4 +57,27 @@ A period is used to identify that class
     transform: translate(-50%, -50%);
     font-family: "3XAY Sans Regular", cursive;
     font-size: 50px;
+}
+
+#logo{
+    border-radius: 40px;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    transition: width 0.5s;
+}
+
+#logo:hover{
+    width: 220px;
+}
+
+.waving{
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 200px;
 }
