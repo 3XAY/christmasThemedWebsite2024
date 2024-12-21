@@ -1,0 +1,59 @@
+/*
+Universal Styles
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Header Styles
+(The hashtag is used to identify the object with that id, which we set in the html file)
+*/
+
+#header{
+    height: 100vh; /*vh means viewport height*/
+    background-image: url(../imgs/bgImage.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*
+A period is used to identify that class
+*/
+.header-text{
+    text-align: center;
+    padding-top: 25px;
+}
+
+#textBg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 500px;
+    height: 400px;
+    
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+@font-face {
+    font-family: "3XAY Sans Regular", cursive;
+    src: url(../fonts/3XAY-SANS-REGULAR.otf);
+}
+
+.box-text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "3XAY Sans Regular", cursive;
+    font-size: 50px;
+}
