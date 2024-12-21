@@ -46,7 +46,7 @@ A period is used to identify that class
 }
 
 @font-face {
-    font-family: "3XAY Sans Regular", cursive;
+    font-family: "3XAY Sans";
     src: url(https://3xay.github.io/christmasThemedWebsite2024/fonts/3XAY-SANS-REGULAR.otf);
 }
 
@@ -55,7 +55,7 @@ A period is used to identify that class
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "3XAY Sans Regular", cursive;
+    font-family: "3XAY Sans", cursive;
     font-size: 50px;
 }
 
