@@ -14,7 +14,7 @@ Header Styles
 
 #header{
     height: 100vh; /*vh means viewport height*/
-    background-image: url(../imgs/bgImage.png);
+    background-image: url(https://3xay.github.io/christmasThemedWebsite2024/imgs/bgImage.png);
     background-position: center;
     background-size: cover;
     background-repeat: repeat;
@@ -47,7 +47,7 @@ A period is used to identify that class
 
 @font-face {
     font-family: "3XAY Sans Regular", cursive;
-    src: url(../fonts/3XAY-SANS-REGULAR.otf);
+    src: url(https://3xay.github.io/christmasThemedWebsite2024/fonts/3XAY-SANS-REGULAR.otf);
 }
 
 .box-text{
