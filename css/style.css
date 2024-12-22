@@ -28,6 +28,9 @@ A period is used to identify that class
     padding-top: 25px;
 }
 
+/*
+This is for the green rounded square that is the background of the text / logo
+*/
 #textBg{
     display: block;
     margin-left: auto;
@@ -39,40 +42,61 @@ A period is used to identify that class
     
 }
 
+/*
+This is for the container, containg the text, logo, and waving hand gif, this makes it apply to everything in the class (basically a no-arg constructor)
+*/
 .container{
     position: relative;
     text-align: center;
     color: white;
 }
 
+/*
+This is how you create a custom font
+The font family is the name, you can also add the type of font
+Eg. cursive, serif, sans serif, etc so it can have a fallback font
+You provide the font via the src: url(), even if it is a local file
+*/
 @font-face {
     font-family: "3XAY Sans";
     src: url(https://3xay.github.io/christmasThemedWebsite2024/fonts/3XAY-SANS-REGULAR.otf);
 }
 
+/*
+This is for the text inside of the green rounded square
+*/
 .box-text{
     position: absolute;
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "3XAY Sans", cursive;
+    font-family: "3XAY Sans", cursive; /*This sets the fallback font to a cursive style font, so if the device can not load the custom font, it can use a system cursive font*/
     font-size: 50px;
 }
 
+/*
+This is specifically for the logo object
+*/
 #logo{
     border-radius: 40px;
     position: absolute;
     top: 63%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*Not sure why, but this properly centers it*/
     width: 200px;
-    transition: width 0.5s;
+    transition: width 0.5s; /*This is how you make a transition, have all of the arguments set, and say transition parameter duration, then you have an event like hover where that value is different, and it'll automatically transition*/
 }
 
+/*
+This is for when you hover above the logo, it does a 200px==>220px transition in 0.5 seconds
+*/
 #logo:hover{
     width: 220px;
 }
 
+/*
+This is specifically for the waving gif object
+*/
 .waving{
     border-radius: 40px;
     position: absolute;
